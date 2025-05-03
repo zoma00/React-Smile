@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://react.dev/" target="_blank">
-    <img src="react-1-logo-png-transparent.png" width="400" alt="Django Logo">
+    <img src="react-1-logo-png-transparent.png" width="200" alt="Django Logo">
   </a>
 
 
