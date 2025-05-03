@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  position: relative;
+}
+
+
+/* Custom Active Link Styling */
+.nav-link {
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+/* Replace ALL nav-link styles with these */
+.nav-link {
+  --transition-speed: 0.2s;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color var(--transition-speed) ease,
+    border-color var(--transition-speed) ease;
+}
+
+/* Active State - Orange */
+.nav-link.active-orange {
+  color: #ff6b00 !important;
+  border-bottom-color: #ff6b00 !important;
+  font-weight: 600;
+}
+
+/* Inactive State - Custom Gray */
+.nav-link:not(.active-orange) {
+  color: #adb5bd !important;
+  /* Better contrast than text-light */
+  border-bottom-color: transparent !important;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .nav-link {
+    padding: 12px 0;
+    text-align: center;
+  }
+}
